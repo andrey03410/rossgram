@@ -51,6 +51,7 @@
     border: 1px solid #D3D9DE;
     box-sizing: border-box;
     border-radius: 6px;
+    padding: 0 6px;
 }
 
 .input.small{

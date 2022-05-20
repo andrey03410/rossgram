@@ -1,7 +1,7 @@
 import React from 'react';
-import Registration from "./registration/Registration";
+import Registration from "./components/registration/Registration";
 import { Routes, Route, Link } from "react-router-dom";
-import Auth from "./auth/Auth";
+import Auth from "./components/auth/Auth";
 
 function App() {
   return (
