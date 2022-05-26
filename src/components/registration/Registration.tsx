@@ -38,7 +38,7 @@ const Registration: React.FC = () => {
         if (isLoading) return
         setIsLoading(true)
         if (!(firstNameError || loginError || lastNameError || nicknameError || passwordError)) {
-            RegistrationAPI.SingUP(lastName, firstName, login, password, gender)
+            RegistrationAPI.SingUP(lastName, firstName, login, password, nickname, gender)
                 .then(response => {
                     if (response.status == 200) {
                         setIsDone(true)

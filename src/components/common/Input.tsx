@@ -11,7 +11,7 @@ interface InputProps {
     textErrors?: string[]
 }
 
-const Input = ({isBig, title, placeholder, info, onChange, textErrors}: InputProps) => {
+const Input : React.FC<InputProps> = ({isBig, title, placeholder, info, onChange, textErrors}: InputProps) => {
     return (
         <div>
             <p>{title}</p>

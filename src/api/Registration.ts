@@ -8,11 +8,11 @@ export enum ErrorType {
 
 export class RegistrationAPI {
     static SingUP(firstname: string, lastname: string, login: string,
-                  password: string, gender: string): Promise<Response> { //void
+                  password: string, nickname: string, gender: string): Promise<Response> { //void
         let request = {
             method: 'POST',
             headers: {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'},
-            body: JSON.stringify({firstname, lastname, login, password, gender})
+            body: JSON.stringify({firstname, lastname, login, password, nickname, gender})
         }
         return fetch(ENDPOINTS.REGISTRATION.SIGN_UP, request)
     }
