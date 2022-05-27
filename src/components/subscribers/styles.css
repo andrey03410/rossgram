@@ -161,12 +161,12 @@
 
 .navbar-search{
     display: none;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
-    width: 412px;
-    left: 265px;
-    top: 84px;
+    width: 450px;
+    right: 330px;
+    padding-top: 250px;
     box-shadow: 4px 4px 20px rgb(197 197 197 / 25%);
 }
 
