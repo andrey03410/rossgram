@@ -27,6 +27,7 @@ const Subscribers = () => {
                                 <span>username</span>
                                 <button className={"subscribe-button"}>Подписаться</button>
                             </div>
+
                         </div>
                     </div>
                     <div className={"right-header"}>
