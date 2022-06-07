@@ -24,7 +24,7 @@ const Auth = () => {
         <div className="wrapper">
             <div className="main-container">
                 <div className="logo">
-                    <img src={logo} alt="logo"/>
+                    <img src={logo} alt="logo" className={"image-logo"}/>
                     <div className="logo-text">
                         *228*
                     </div>

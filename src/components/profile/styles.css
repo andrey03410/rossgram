@@ -153,10 +153,30 @@
     margin-right: 35px;
     margin-bottom: 35px;
     border-radius: 50px;
+    cursor:pointer;
+}
+
+.picture:hover{
+    box-shadow: 4px 4px 20px rgba(197, 197, 197, 0.75);
+    transform: scale(1.04);
+    transition: all 0.5s ease-in-out;
 }
 
 .posts{
     display: flex;
     flex-wrap: wrap;
     margin-left: 80px;
+}
+
+.plus{
+    margin-right: 20px;
+}
+
+.feed-post{
+    width: 528px;
+    height: 528px;
+    margin-right: 35px;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
