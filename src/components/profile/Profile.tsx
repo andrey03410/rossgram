@@ -8,6 +8,7 @@ import noPosts from "../../images/noPosts.svg"
 import img from "../../images/cat.png"
 import Navigation from "./Navigation";
 import {Link} from "react-router-dom";
+import AddPost from "./AddPost";
 
 interface Ipost {
     id: number;
@@ -36,6 +37,9 @@ const myProfile: Iprofile = {
 }
 
 const Profile = () => {
+    const [showAddPost, setShowAddPost] = React.useState(false)
+    const onClickAddPost = () => setShowAddPost(true)
+
     return (
         <div>
             <Navigation/>
@@ -47,7 +51,8 @@ const Profile = () => {
                             <div className={"nickname-text"}>
                                 <div className={"profile-info-up"}>
                                     <span>{myProfile.nickname}</span>
-                                    <button className={"add-post"}>Добавить пост</button>
+                                    <button className={"add-post"} onClick={onClickAddPost}>Добавить пост</button>
+                                    { showAddPost ? <AddPost /> : null }
                                 </div>
                             </div>
                             <p style={{fontSize: "20px"}}>{myProfile.firstName + " " + myProfile.lastName}</p>
