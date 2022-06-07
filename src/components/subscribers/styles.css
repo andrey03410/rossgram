@@ -137,11 +137,7 @@
     width: 64px;
     height: 64px;
     border-radius: 64px;
-}
-
-.mini-icon:hover{
-    box-shadow: 4px 4px 20px rgba(197, 197, 197, 0.75);
-    transform: scale(1.04);
+    cursor: pointer;
 }
 
 .subscribe-button{
@@ -152,6 +148,12 @@
     border-radius: 8px;
     font-size: 16px;
     color: white;
+    cursor: pointer;
+}
+
+.subscribe-button:hover{
+    box-shadow: 4px 4px 20px rgba(197, 197, 197, 0.75);
+    transform: scale(1.04);
 }
 
 .unsubscribe-button{
@@ -162,11 +164,7 @@
     border-radius: 8px;
     font-size: 16px;
     color: white;
-}
-
-.subscribe-button:hover{
-    box-shadow: 4px 4px 20px rgba(197, 197, 197, 0.75);
-    transform: scale(1.04);
+    cursor: pointer;
 }
 
 .unsubscribe-button:hover{
@@ -191,6 +189,11 @@
     right: 330px;
     padding-top: 250px;
     box-shadow: 4px 4px 20px rgb(197 197 197 / 25%);
+}
+
+.mini-icon:hover{
+    box-shadow: 4px 4px 20px rgba(197, 197, 197, 0.75);
+    transform: scale(1.04);
 }
 
 .navbar-search-cell{
